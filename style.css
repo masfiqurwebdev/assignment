@@ -324,3 +324,117 @@ footer h1{
     align-items: center;
     justify-content: center;
 }
+
+
+
+/* frist responsive */
+@media screen and (max-width:576px) {
+    *{
+        border:1px solid white;
+    }
+    header, .about , .techwave, .feature , .host, footer{
+        width: 450px;
+    }
+    .section-title{
+        font-size: 32px;
+    }
+
+    /* header section*/
+    nav{
+        padding: 10px 50px;
+    }
+    .logo{
+        font-size: 32px;
+    }
+    nav ul{
+        display: none;
+    }
+    nav button{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        width: 24px;
+    }
+
+    .hero{
+        flex-direction: column;
+    }
+    .mic{
+        margin: 0 auto;
+        width: 140px;
+        height: 140px;
+        background: url(assets/responsive_hero-circle.png) no-repeat;
+        background-size:cover ;
+        position: absolute;
+        top: 70px;
+        right:35%;
+    }
+    .mic img{
+        width: 100px;
+    }
+    .new{
+        position: absolute;
+        top: 10%;
+        right: 0%;
+        font-size: 12px;
+    }
+    .hero{
+        padding: 50px 25px ;
+    }
+    .hero-content h1{
+        font-size: 40px;
+    }
+    .hero button{
+        font-size: 16px;
+    }
+    
+    /* about section */
+
+    .about{
+        padding: 0 50px;
+    }
+    .about-summary{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* techwave section*/
+
+    .techwave{
+        padding: 10px 50px;
+    }
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card1{
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    /* feature */
+    .feature{
+        padding: 10px 50px;
+    }
+    .feature-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Host section */
+
+    .host{
+        margin-bottom: 50px;
+    }
+    .host-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* footer */
+    .footer-icons{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
