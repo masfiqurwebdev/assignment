@@ -329,9 +329,7 @@ footer h1{
 
 /* frist responsive */
 @media screen and (max-width:576px) {
-    *{
-        border:1px solid white;
-    }
+
     header, .about , .techwave, .feature , .host, footer{
         width: 450px;
     }
@@ -442,9 +440,7 @@ footer h1{
 
 /* secound responsive */
 @media screen and (min-width:577px) and (max-width:992px) {
-    *{
-        border:1px solid white;
-    }
+
     header, .about , .techwave, .feature , .host, footer{
         width: 660px;
     }
