@@ -25,6 +25,19 @@ a{
     color: white;
     border-radius: 50px;
     font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px #9100f8;
+  }
+  to {
+    box-shadow: 0 0 35px #fb09b4;
+  }
+}
+.btn-primary:hover{
+    animation: glow 1.5s infinite alternate;
+    transform: scale(1.05);
 }
 .w-1440{
     max-width: 1440px;
@@ -134,6 +147,11 @@ nav ul li a{
     display: flex;
     align-items: center;
     gap: 5px;
+    transition: all .3s ease-in-out;
+}
+.btn-green:hover{
+    transform: scale(1.05);
+    animation: glow 1.5s infinite alternate;
 }
 .btn-green{
     padding: 12px 16px;
@@ -142,7 +160,14 @@ nav ul li a{
     font-size: 16px;
     border: 1px solid #00FF88;
 }
-
+@keyframes glow2 {
+  from {
+    box-shadow: 0 0 5px #9100f8;
+  }
+  to {
+    box-shadow: 0 0 35px #00FF88;
+  }
+}
 
     /* about section */
 
@@ -188,6 +213,10 @@ nav ul li a{
     background: hsla(266, 71%, 23%, 0.404);
     text-align: left;
     border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.08);
 }
 .card img{
     width: 60px;
@@ -229,6 +258,7 @@ nav ul li a{
     border-radius: 20px;
     background: #250D44;
 }
+
 
 .feature-card iframe{
     width: 100%;
