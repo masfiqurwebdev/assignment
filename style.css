@@ -438,3 +438,119 @@ footer h1{
     }
 
 }
+
+
+/* secound responsive */
+@media screen and (min-width:577px) and (max-width:992px) {
+    *{
+        border:1px solid white;
+    }
+    header, .about , .techwave, .feature , .host, footer{
+        width: 660px;
+    }
+    .section-title{
+        font-size: 38px;
+    }
+
+    /* header section*/
+    nav{
+        padding: 15px 60px;
+    }
+    .logo{
+        font-size: 38px;
+    }
+    nav ul{
+        display: none;
+    }
+    nav button{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        width: 38px;
+    }
+
+    .hero{
+        flex-direction: column;
+        padding: 50px 25px ;
+
+    }
+
+    .mic{
+        margin: 0 auto;
+        width: 150px;
+        height: 150px;
+        background: url(assets/responsive_hero-circle.png) no-repeat;
+        background-size:cover ;
+        position: absolute;
+        top: 15%;
+        right:40%;
+    }
+    .mic img{
+        width: 100px;
+    }
+    .new{
+        position: absolute;
+        top: 10%;
+        right: 0%;
+        font-size: 12px;
+    }
+    .hero-content{
+        margin-top: 150px;
+    }
+    .hero-content h1{
+        font-size: 40px;
+    }
+    .hero button{
+        font-size: 16px;
+    }
+    
+    /* about section */
+
+    .about{
+        padding: 0 60px;
+    }
+    .about-summary{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* techwave section*/
+
+    .techwave{
+        padding: 10px 50px;
+    }
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card1{
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    /* feature */
+    .feature{
+        padding: 10px 60px;
+    }
+    .feature-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Host section */
+
+    .host{
+        margin-bottom: 50px;
+    }
+    .host-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* footer */
+    .footer-icons{
+        grid-template-columns: repeat(4,1fr);
+    }
+
+}
