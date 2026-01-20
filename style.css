@@ -329,7 +329,7 @@ nav ul li a{
 
 
 footer{
-    background: url(assets/footer-bg.png);
+    background: url(assets/footer-bg.png) no-repeat;
     background-size: contain;
     display: flex;
     align-items: center;
